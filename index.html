@@ -13,24 +13,22 @@
   </head>
 
   <body>
-    <script src="app.js"></script>
-    <nav role="navigation" class="top-nav">
-      <img class="logo" src="/img/logo-black.png" alt="yellow tulip flower logo ">
-      <h1>BCN</h1>
-
-      <button onclick="menu()">MENU<i class="fa fa-caret-down"></i></button>
-
-      <ul id="menu-links" class="menu-links">
-        <li><a href="#">home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li class="call-now"><a href="#">Call now</a></li>
-      </ul>   
+    <nav role="navigation">
+      <div class="top-nav">
+        <h1>BCN</h1>
+        <h2><i class="fa fa-bars"></i></h2>  
+      </div> 
+      <div class="nav-menu">
+        <ul class="menu-links">
+          <li><a href="#">home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li class="call-now"><a href="#">Call now</a></li>
+        </ul>   
+      </div>  
     </nav>
     <header role="banner" class="banner-intro">
-      <h2>Connecting
-        YOU TO A BUSINESS
-      </h2>
+      <h2>connecting you to a business</h2>
     </header>
     <main role="main" class="main">
       <section role="region" class="services">
@@ -40,6 +38,7 @@
         <h2>about</h2>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
   <footer role="contentinfo">
 
