@@ -22,7 +22,7 @@ nav {
   background-color: white;
   width: 100%;
   border-bottom: 1px solid #eee;
-  height: 3.15rem;
+  height: 2.23rem;
 }
 
 .top-nav {
@@ -35,12 +35,14 @@ nav {
   margin: 0;
   padding-left: .8rem;
   padding-top: .4rem;
+  font-size: 1.2rem;
 }
 
 /* burger */
 .top-nav h2 {
   position: absolute;
-  padding: .5rem .7rem .5rem .7rem;
+  padding: 0rem .6rem .4rem .6rem;
+
   right: 0;
   top: 0;
   border: 1px solid #eee;
@@ -51,12 +53,12 @@ nav {
 }
 
 .top-nav i {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 /* end of burger */
 
 .nav-menu {
-  margin-top: 3.1em;
+  margin-top: 2em;
 
 }
 
@@ -64,7 +66,7 @@ nav {
   font-family: 'Oswald', sans-serif;
   list-style: none;
   text-transform: uppercase;
-  font-size: larger;
+  font-size: .7rem;
   width: 100%;
   display: none;
   display: flex;
@@ -73,10 +75,10 @@ nav {
 
 .menu-links li {
   padding-left: .8rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
   border-bottom: 1px solid #eee;
-  
+  margin: 0;
   width: 100%;
 }
 
@@ -87,7 +89,6 @@ nav {
 
 .call-now a {
   color: rgb(29, 90, 170, 0.6);
-  font-size: x-large;
 }
 
 .call-now a:active {
