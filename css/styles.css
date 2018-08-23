@@ -140,3 +140,12 @@ nav {
 }
 
 /* Header start here */
+
+header {
+  background-image: linear-gradient(rgba(29, 90, 170, 0.6),rgb(29, 90, 170, 0.6)), url(/img/cover.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
