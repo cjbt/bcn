@@ -21,7 +21,7 @@ nav {
   position: fixed;
   background-color: white;
   width: 100%;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px  solid #eee;
   height: 2.23rem;
 }
 
@@ -59,7 +59,7 @@ nav {
 
 .nav-menu {
   margin-top: 2em;
-
+  background-color: white;
 }
 
 .menu-links {
