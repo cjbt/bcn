@@ -57,6 +57,7 @@ nav {
 
 .nav-menu {
   margin-top: 3.1em;
+
 }
 
 .menu-links {
@@ -75,7 +76,7 @@ nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
-  width: 100%;
+   width: 100%;
 }
 
 .menu-links a {
@@ -119,7 +120,7 @@ nav {
   
   .menu-links {
     display: flex;
-
+    flex-direction: row;
   }
   
   .menu-links li {
