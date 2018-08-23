@@ -25,7 +25,7 @@ body {
 }
 
 .logo {
-  height: 4.5rem;
+  height: 2.2rem;
   margin-top: .4rem; 
 }
 
@@ -61,6 +61,7 @@ i {
   display: block;
   background-color: white;
   height: 100vh;
+  display: none;
 }
 
 .top-nav ul li {
@@ -96,7 +97,7 @@ i {
 /* Navbar end */
 
 .banner-intro {
-  background-image: linear-gradient(rgba(29, 90, 170, 0.6),rgb(29, 90, 170, 0.6)), url(/img/bg.jpg);
+  background-image: linear-gradient(rgba(29, 90, 170, 0.6),rgb(29, 90, 170, 0.6)), url(/img/cover.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -122,16 +123,50 @@ i {
     border-bottom: 1px solid #eee;
   }
 
+  .logo {
+    flex: 1;
+    height: 1.8rem;
+    border: none;
+    margin-top: .18rem;
+    padding-right: .18rem;
+    padding-left: 1.2rem;
+
+  }
+
+  .top-nav h1 {
+    flex: 1;
+    border: none;
+    margin-right: 2rem;
+    
+  }
+
   .menu-links {
-    all: unset;
-    width: 100%;
+    height: 0;
     display: flex;
     border: none;
-
+    justify-content: space-around;
   }
 
-  .menu-links li {
+  .top-nav ul li {
     border: none;
-
+    padding: 0px;
+    margin: 0px;
   }
+
+  .top-nav ul .home {
+    flex: 1;
+  }
+  
+  .top-nav ul .services {
+    flex: 1;
+  }
+  
+  .top-nav ul .about {
+    flex: 1;
+  }
+  
+  .top-nav ul .call-now {
+    flex: 1;
+  }  
 }
+
