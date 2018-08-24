@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+
+
 a {
   text-decoration: none;
 }
@@ -70,8 +72,9 @@ nav {
   font-size: .7rem;
   width: 100%;
   display: none;
-  display: flex;
   flex-direction: column;
+  height: 200vh;
+  z-index: 998;
 }
 
 .menu-links li {
@@ -140,6 +143,8 @@ nav {
 
 /* Header start here */
 
+
+
 .banner-intro {
   position: relative;
   display: flex;
@@ -159,11 +164,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
+  height: 36rem;
+
   display: flex;
   flex-direction: column;
   background-attachment: fixed;
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .header-title {
@@ -178,11 +187,12 @@ header {
 header h2 {
   position: relative;
   bottom: .3rem;
-
   text-align: center;
   font-family: 'Righteous', cursive;
   color: white;
-  font-size: 4em;
+
+  font-size: 3em;
+
   text-transform: uppercase;
   letter-spacing: .02em;
   line-height: .9;
@@ -193,14 +203,16 @@ header h2 {
 
 .logo {
   position: relative;
-  top: 2.4rem;
+
+  top: 1rem;
 
   height: 1em;
 }
 
 .header-description {
   position: relative;
-  top: 3.4rem;
+
+  top: 2rem;
 
   font-family: 'Rubik', sans-serif;
   color: white;
@@ -222,5 +234,68 @@ header span {
 }
 
 
+@media (min-width: 450px) {
+
+  
+  header {
+    height: 100vh; 
+  }
+  
+  .header-title {
+    bottom: 1.8rem;
+    
+  }
+  
+  header h2 {
+    font-size: 4em;
+
+  }
+  
+  .logo {
+    top: 2.4rem;
+  }
+  
+  .header-description {
+    top: 3.4rem;
+  }
+}
+
+@media screen and (min-width: 600px){
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* burger */
+  .top-nav h2 {
+    display: none;
+  }
+  /* end of burger */
+  
+  .top-nav {
+    flex: 2;
+  }
+
+  .nav-menu {
+    flex: 1; 
+    margin-top: .7rem;
+  }
+  
+  .menu-links {
+    display: flex !important;
+    flex-direction: row;
+  }
+  
+  .menu-links li {
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+
+  .menu-links .call-now {
+    padding-bottom: .1rem;
+  }
+}
 
 /* About section */
