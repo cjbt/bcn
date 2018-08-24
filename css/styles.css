@@ -20,58 +20,68 @@ body {
 /* Navbar start */
 
 nav {
+  display: flex;
   position: fixed;
   background-color: white;
   width: 100%;
-  border-bottom: 2px  solid #eee;
-  height: 2.23rem;
+  border-bottom: .2rem  solid #eee;
+  height: 3rem;
   z-index: 999;
+  flex-direction: column;
 }
 
 .top-nav {
+  flex: 8;
   position: relative;
+  width: 100%;
 }
 
 .top-nav h1 {
-  font-family: 'Righteous', cursive;
-  position: absolute;
-  margin: 0;
-  padding-left: .8rem;
+  position: relative;
   padding-top: .4rem;
-  font-size: 1.2rem;
+  padding-left: .8rem;
+  font-family: 'Righteous', cursive;
+  margin: 0;
+  font-size: 2rem;
 }
 
 /* burger */
-.top-nav h2 {
+.top-nav span {
   position: absolute;
-  padding: 0rem .6rem .4rem .6rem;
-
   right: 0;
   top: 0;
-  border: 1px solid #eee;
-}
-
-#navbar-toggle {
+  padding-top: .5rem;
+  padding-right: .8rem;
+  padding-left: .8rem;
+  padding-bottom: .5rem;
+  border-top: .08rem solid #eee;
+  border-left: .08rem solid #eee;
+  border-right: .08rem solid #eee;
+  border-bottom: none;
   cursor: pointer; 
 }
 
 .top-nav i {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 /* end of burger */
 
 .nav-menu {
-  margin-top: 2em;
+  width: 100%;
   background-color: white;
 }
 
 .menu-links {
+  margin-top: .39rem;
+  border-top: .1rem solid #eee;
   font-family: 'Oswald', sans-serif;
   list-style: none;
   text-transform: uppercase;
-  font-size: .7rem;
+  font-size: 1.2rem;
   width: 100%;
+  
   display: none;
+  
   flex-direction: column;
   height: 200vh;
   z-index: 998;
@@ -81,9 +91,13 @@ nav {
   padding-left: .8rem;
   padding-top: .8rem;
   padding-bottom: .8rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: .1rem solid #eee;
   margin: 0;
   width: 100%;
+}
+
+.call-now {
+  font-size: 1.3rem;
 }
 
 .menu-links a {
@@ -103,43 +117,6 @@ nav {
   color: rgb(29, 90, 170, 0.6);
 }
 
-@media screen and (min-width: 600px){
-  nav {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  /* burger */
-  .top-nav h2 {
-    display: none;
-  }
-  /* end of burger */
-  
-  .top-nav {
-    flex: 2;
-  }
-
-  .nav-menu {
-    flex: 1; 
-    margin-top: .7rem;
-  }
-  
-  .menu-links {
-    display: flex !important;
-    flex-direction: row;
-  }
-  
-  .menu-links li {
-    padding: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none;
-  }
-
-  .menu-links .call-now {
-    padding-bottom: .1rem;
-  }
-}
 
 /* Header start here */
 
@@ -159,8 +136,10 @@ nav {
 
 header {
   background-image: linear-gradient(rgba(29, 90, 170, 0.6),rgb(29, 90, 170, 0.6)), url(/img/cover.jpg);
-  background-size: cover;
-  background-position: center center;
+  
+  background-size: auto;
+
+  background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,15 +213,18 @@ header span {
 }
 
 
-@media (min-width: 450px) {
+@media (min-width: 500px) {
 
   
   header {
+    background-size: cover;
     height: 100vh; 
+
+    background-position: center center;
   }
   
   .header-title {
-    bottom: 1.8rem;
+    bottom: 1.8em;
     
   }
   
@@ -252,49 +234,75 @@ header span {
   }
   
   .logo {
-    top: 2.4rem;
+    top: 2.4em;
   }
   
   .header-description {
-    top: 3.4rem;
+    top: 5em;
   }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 650px){
   nav {
+    position: fixed;
     display: flex;
+    justify-content: space-between;
+    
+    background-color: white;
+    width: 100%;
+    border-bottom: .2em  solid #eee;
+    height: 3em;
+    z-index: 999;
     flex-direction: row;
   }
   
+  .top-nav {
+    flex: 1;
+    position: relative;
+    width: 100%;
+  }
+  
+  .top-nav h1 {
+    position: relative;
+    padding-top: .2em;
+    padding-left: .8em;
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    font-size: 2rem;
+  }
+  
   /* burger */
-  .top-nav h2 {
+  .top-nav span {
     display: none;
   }
   /* end of burger */
   
-  .top-nav {
-    flex: 2;
-  }
-
   .nav-menu {
-    flex: 1; 
-    margin-top: .7rem;
+    position: relative;
+    top: -.4em;
+    flex: 1;
+    width: 0;
   }
   
   .menu-links {
+    margin-top: none;
+    border-top: none;
+    width: 50;
+    justify-content: flex-end;
     display: flex !important;
     flex-direction: row;
+    height: auto;
   }
   
   .menu-links li {
-    padding: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: none;
     border: none;
+    width: auto;
   }
 
-  .menu-links .call-now {
-    padding-bottom: .1rem;
+  .call-now {
+    margin-right: 2em;
+    padding-right: 1em;
   }
 }
 
