@@ -154,8 +154,8 @@ header {
   height: 32rem;
   display: flex;
   flex-direction: column;
-  
-  background-attachment: fixed;
+/*   
+  background-attachment: fixed; */
   
   text-align: center;
   overflow: hidden;
