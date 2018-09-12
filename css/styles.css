@@ -113,7 +113,7 @@ nav {
 
 
 .call-now a {
-  color: rgb(29, 90, 170, 0.6);
+  color: rgbaß(29, 90, 170, 0.6);
 }
 
 .call-now a:active {
@@ -121,7 +121,7 @@ nav {
 }
 
 .menu-links a:active {
-  color: rgb(29, 90, 170, 0.6);
+  color: rgba(29, 90, 170, 0.6);
 }
 
 
