@@ -285,7 +285,7 @@ button {
   bottom: 3.5rem;
   cursor: pointer;
   margin-bottom: 10rem;
-  background-color: black;
+  background-color: rgb(29, 90, 170, 0.6);
   padding: .5rem;
   color: white;
   border-radius: 5px;
