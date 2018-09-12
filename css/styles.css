@@ -143,7 +143,7 @@ nav {
 }
 
 header {
-  background-image: linear-gradient(rgba(29, 90, 170, 0.6),rgb(29, 90, 170, 0.6)), url(https://s3-us-west-1.amazonaws.com/bcn-business-connect/cover.jpg);
+  background-image:  linear-gradient(rgba(29, 90, 170, 0.6),rgba(29, 90, 170, 0.6)),url(https://s3-us-west-1.amazonaws.com/bcn-business-connect/cover.jpg);
   
   background-size: auto;
 
@@ -285,7 +285,7 @@ button {
   bottom: 3.5rem;
   cursor: pointer;
   margin-bottom: 10rem;
-  background-color: rgb(29, 90, 170, 0.6);
+  background-color: black;
   padding: .5rem;
   color: white;
   border-radius: 5px;
