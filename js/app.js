@@ -11,7 +11,6 @@ navbarToggle.addEventListener('click',function(){
     else{
         mainNav.style.display="flex";
         this.classList.add('active');
-
     }
 });
 // topnav menu end //
